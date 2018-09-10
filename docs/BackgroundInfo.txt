@@ -1,0 +1,154 @@
+Background Info for OR Ocean CMECS
+
+LIDAR Data
+-----------
+2014 (CZMIL System, TopoBathy):
+	http://www.coastalmarinedata.net/2014-czmil-topobathy-lidar-products-available/
+	http://www.coastalmarinedata.net/national-coastal-mapping-program-2014-west-coast-survey/
+	Products:
+		1 m DEM
+		True color imagery (30 cm)
+		Hyperspectral imagery (1m, 36 bands)
+	https://coast.noaa.gov/dataviewer/#/lidar/search/where:ID=6282
+		Tide controlled: No
+
+2016
+	http://www.coastalmarinedata.net/2016-usgs-west-coast-el-nino-lidar-products-available/
+	Products:
+		0.5m DEM
+		LiDAR LAS 1.4 format
+		3D breaklines.
+		USGS LiDAR Base Spec, v.1.2
+	https://coast.noaa.gov/dataviewer/#/lidar/search/where:ID=6260
+		Tide controlled: Yes
+	https://coast.noaa.gov/data/Documents/Metadata/Lidar/harvest/west_coast_2016_el_nino_m6259_metadata.xml
+
+2009-2011 USACE NCMP Topobathy Lidar: Pacific Coast (OR,WA), JALBTCX
+https://inport.nmfs.noaa.gov/inport/item/50092
+
+Shorezone
+----------
+http://www.oregonshorezone.info/index.html
+2011
+Oblique imagery
+Videos
+Data -- shoreline interpretation
+
+
+Imagery
+--------
+2016 NAIP Imagery
+	https://nrcs.app.box.com/v/naip/folder/17936506001
+2014 NAIP Imagery
+	https://nrcs.app.box.com/v/naip/folder/18390726231
+2012 NAIP Imagery
+	https://nrcs.app.box.com/v/naip/folder/18964926828
+
+NAIP coverage 2002-2017:
+	https://www.fsa.usda.gov/Assets/USDA-FSA-Public/usdafiles/APFO/status-maps/pdfs/naipcov_2017.pdf
+https://gdg.sc.egov.usda.gov/GDGHome_DirectDownLoad.aspx
+
+http://imagery.oregonexplorer.info/ 
+	only shows up to 2011
+
+Digital Globe Imagery is what is used in ESRI imagergy base map
+
+Ancillary
+----------
+PISCO
+ODFW Marine Reserves
+
+Oregon Geospatial Data 
+----------------------
+http://www.oregon.gov/geo/Pages/sdlibrary.aspx
+Imagery Explorer: http://oregonexplorer.info/topics/imagery?ptopic=98
+http://imagery.oregonexplorer.info/arcgis/rest/services
+
+Notes about Shoreline in OR (from Shorezone report & Data)
+----------------------------------------------------------
+2633 km shoreline total
+Organic shore type (fine or marsh): 1202.1km  (45.7%)
+Bedrock shore type: 7.8%
+Sediment-dominated: 33.7%
+	Wide sand flat is most common, 495.2 km (18.8%)
+
+Outer Coast (31% of the shoreline) = 816.23 km = $61 per km = 2km / hr
+	is dominated by exposed, immobile/partially-immobile substrate (16%) and exposed, mobile substrate (13%). 
+22 biobands have been mapped in Oregon to date. On the Outer Coast some of the most common biobands are: RED algae (54%, MUS (California mussels and goose barnacle complexes; 32%), SUR surf grass (18%) and NER bull kelp (15%).
+
+
+
+Man-modified shorelines (Shore Types 32 and 33) are common around populated areas; 25.6% of the entire Oregon shoreline. The most common types of shore modification observed are landfill and riprap (466.3 km and 156.9 km respectively). Most anthropogenic features are concentrated in the larger communities of Tillamook, Newport and Coos Bay.
+
+Used OR CUSP shoreline
+
+In Oregon, two bioareas have been described to distinguish between regional patterns on the high energy outer coast (Oregon – Outer Coast, OREO) and the protected, estuary- dominated inner coast (Oregon – Inner Coast, OREI)
+
+--> AREAS = 01 in Unit table for outer coast 
+797780.72989 meters = 797 km
+
+
+Image Processing References
+----------------------------
+Seafloor Mapping Along Continental Shelves
+https://books.google.com/books?id=SaDWCwAAQBAJ&lpg=PA100&ots=IhxJNzkgmK&dq=automated%20image%20analysis%20shoreline%20habitats&pg=PA101#v=onepage&q=automated%20image%20analysis%20shoreline%20habitats&f=false
+
+Object Based IMage Classification:
+http://gisgeography.com/obia-object-based-image-analysis-geobia/
+
+ESRI:  http://desktop.arcgis.com/en/arcmap/10.3/tools/spatial-analyst-toolbox/understanding-segmentation-and-classification.htm
+
+UMN Object-Based Image Analysis: https://www.youtube.com/watch?v=TpuV7DT6seI
+Segmentation:  homogenous group of pixels based on size, shape, & area.  = Image objects
+then, can use spectral data or morphology (DEM/point cloud)
+Context -- shared boundaries
+Patterns -- example, Ag Field (bright features, but not a lot of buildings)
+
+https://gis.stackexchange.com/questions/200987/image-segmentation-in-open-source-software
+https://www.orfeo-toolbox.org/
+https://www.orfeo-toolbox.org/CookBook/recipes/improc.html
+https://bitbucket.org/petebunting/rsgislib
+https://spectraldifferences.wordpress.com/2014/09/07/object-based-classification-using-random-forests/
+
+https://landsat.gsfc.nasa.gov/welcome-to-the-intertidal-zone-mapping-australias-coast-with-landsat/
+
+https://spectraldifferences.wordpress.com/tag/geobia/
+
+https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks#earth-science-and-geo-spatial-data
+
+-----------
+50K = 416.667 hours = 52 days = 10.4 weeks full-time effort = 2.6 months
+
+800 kms, 168 hrs to do draft mapping = 5kms / hr
+
+https://twitter.com/sarasomewhere/status/1019226790886297601
+
+
+References:
+-----------
+Finkbeiner:  http://www.shorezone.org/about-us/shorezone-resources, 2015 Shorezone partners meeting
+	http://www.shorezone.org/documents/Coastal%20and%20Marine%20Ecological%20Classification%20Standards,%20CMECS%20-%20Mark%20Finkbeiner,%20NOAA.pdf
+Harper and Ward.  2010
+	https://alaskafisheries.noaa.gov/sites/default/files/sz_cmecs.pdf
+	2011 -- https://afs.confex.com/afs/2011/webprogram/Paper8467.html
+Dave Fox 2014
+	http://www.oregonshorezone.info/docs/OregonProtocol_Final_July2014.pdf
+
+Wright, D.J., Pendleton, M., Boulware, J., Walbridge, S., Gerlt, B., Eslinger, D., Sampson, D., and Huntley, E. 2012. ArcGISBenthic Terrain Modeler (BTM), v. 3.0, Environmental Systems Research Institute, NOAA Coastal Services Center, Massachusetts Office of Coastal Zone Management. Available online at http://esriurl.com/5754.
+
+http://www.mdpi.com/journal/geosciences/special_issues/marine_geomorphometry
+
+CMECS
+----------
+https://iocm.noaa.gov/cmecs/using-cmecs.html
+https://coast.noaa.gov/digitalcoast/tools/cmecs-crosswalk.html
+https://www.cmecscatalog.org/cmecs/
+https://my.usgs.gov/confluence/display/CMECSIG/CMECS+Community+Forum+Home
+
+DigitalGlobe Notebooks?
+----------------------
+https://www.businesswire.com/news/home/20180529005374/en/Maxar-Technologies%E2%80%99-DigitalGlobe-Releases-GBDX-Notebooks-Commercially
+https://gbdxdocs.digitalglobe.com/docs/gbdx-notebooks-course#section-getting-started
+https://gbdxdocs.digitalglobe.com/v1/docs/worldview-2
+https://gbdxdocs.digitalglobe.com/docs/worldview-3
+http://gbdxtools.readthedocs.io/en/latest/index.html
