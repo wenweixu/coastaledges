@@ -116,12 +116,7 @@ https://spectraldifferences.wordpress.com/tag/geobia/
 
 https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks#earth-science-and-geo-spatial-data
 
------------
-50K = 416.667 hours = 52 days = 10.4 weeks full-time effort = 2.6 months
 
-800 kms, 168 hrs to do draft mapping = 5kms / hr
-
-https://twitter.com/sarasomewhere/status/1019226790886297601
 
 
 References:
